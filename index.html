@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+
+<head>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Patricias Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <meta name="Patricia Schneider" content="Patricia Schneider" description="Patricia Schneider" />
+    <script>
+        function onScroll() {
+            for(letter of document.querySelectorAll(".scroll-in img")) {
+                const top = letter.getBoundingClientRect().top;
+                if(top < 0) {
+                    letter.style.position = "sticky";
+                }
+                
+            }
+        }
+    </script>
+    <script>
+        $(function() {
+  $('a[href*=#]').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+  });
+});
+    </script>
+    
+</head>
+
+<body class="patty" onscroll="onScroll()">
+    <header>
+        <a href="./index.html">
+            <h1>Patricia</h1>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="./marketingunddiverseshome.html">Marketing & Diverses</a></li>
+                <li><a href="./grafikundillustrationhome.html">Grafik & Illustration</a></li>
+                <li><a href="./weeklyhome.html">Weekly</a></li>
+                <li><a href="./freiearbeitenhome.html">Freie Arbeiten</a></li>
+            </ul>
+        </nav>
+
+        
+    </header>
+    <main>
+        <div class="scroll-in">
+            <img src="./images/patty-02.svg">
+              </section>
+            <img src="./images/patty-03.svg">
+            <img src="./images/patty-04.svg">
+            <img src="./images/patty-05.svg">
+            <img src="./images/patty-06.svg">
+        </div>
+        <section id="section05" class="demo">
+            <a href="#section06"><span></span>Scroll</a>
+    </main>
+    <body class="background">
+        <header>
+            <a href="./index.html">
+                <h1>Patricia</h1>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="./marketingunddiverseshome.html">Marketing & Diverses</a></li>
+                    <li><a class="active" href="./grafikundillustrationhome.html">Grafik & Illustration</a></li>
+                    <li><a href="./weeklyhome.html">Weekly</a></li>
+                    <li><a href="./freiearbeitenhome.html">Freie Arbeiten</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <a href="./marketingunddiverseshome.html"><h1 class="texteinfügenn">Marketing und Diverses</h1></a>
+            <section class="anja">
+                <div class="pfeil">
+                    <a href="./oval4.html">
+                        &#706;
+                    </a>
+                </div>
+                <a class="ovalone" href="./marketingunddiverseshome.html">
+                    <div class="texteinfügen">
+                        01/04
+                    </div>
+                </div>
+            </a>
+            <div class="pfeil">
+                <a href="./oval2.html">
+                    &#707;
+                </a>
+            </div>
+        </section>
+        <section class="anja2" >
+            <div class="circle circle-active"></div>
+            <a href="./oval2.html"><div class="circle"></div></a>
+            <a href="./oval3.html"><div class="circle"></div></a>
+            <a href="./oval4.html"><div class="circle"></div></a>
+        </section>
+        </main>
+    </body>
+    
+    </html>

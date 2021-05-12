@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+
+<head>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <meta charset="utf-8">
+    <title>Patricias Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<script>
+    function openNav() {
+        document.getElementById("hamburgerNav").style.width = "100%";
+    }
+    function closeNav() {
+        document.getElementById("hamburgerNav").style.width = "0%";
+    }
+  </script>
+
+<body class="background">
+    <header>
+        <a href="./index.html">
+            <h1>Patricia</h1>
+        </a>
+         <!-- Hamburger Icon, &#9776; stellt den Hamburger (☰) dar, ist im CSS mit "display:none" ausgeblendet  -->
+         <div id="hamburgerIcon" onclick="openNav()">&#9776;</div>
+    
+         <!-- Hamburger Navigation mit einem Close-Button (x), ist im CSS mit "width:0" ausgeblendet  -->
+         <nav id="hamburgerNav">
+             <a class="closebtn" onclick="closeNav()" href="#">&times;</a> <!--  &times; stellt das X dar -->
+                 <a  class="hamburgera" href="marketingunddiverseshome.html">Marketing & Diverses </a>
+                 <a class="hamburgera" class="activee" href="grafikundillustrationhome.html">Grafik & Illustration </a>
+                 <a class="hamburgera" href="weeklyhome.html">Weekly </a>
+                 <a class="hamburgera" class="activee" href="freiearbeitenhome.html">Freie Arbeiten</a>
+         </nav>
+     </div>
+     <nav class="lenscha">
+         <ul>
+             <li><a href="./marketingunddiverseshome.html">Marketing & Diverses</a></li>
+             <li><a  href="./grafikundillustrationhome.html">Grafik &
+                     Illustration</a></li>
+             <li><a href="./weeklyhome.html">Weekly</a></li>
+             <li><a class="activee" href="./freiearbeitenhome.html">Freie Arbeiten</a></li>
+         </ul>
+     </nav>
+    </header>
+    <main>
+        <a href="./freiearbeitenhome.html"><h1 class="texteinfügenn">Freie Arbeiten</h1></a>
+        <section class="anja">
+            <div class="pfeil">
+                <a href="./oval3.html">
+                    &#706;
+                </a>
+            </div>
+        <a class="ovale" href="./freiearbeitenhome.html">
+                <div class="texteinfügen">
+                    04/04
+                </div>
+        </a>
+        <div class="pfeil">
+            <a href="./oval.html">
+                &#707;
+            </a>
+        </div>
+    </section>
+    <section class="anja2" >
+        <a href="./oval.html"><div class="circle"></div></a>
+        <a href="./oval2.html"><div class="circle"></div></a>
+        <a href="./oval3.html"><div class="circle"></div></a>
+        <div class="circle circle-active"></div>
+    </section>
+    </main>
+</body>
+
+</html>
